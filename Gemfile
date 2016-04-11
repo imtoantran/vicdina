@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-gem 'rails', '4.2.3'
+gem 'rails'
 gem 'sqlite3'
 gem "mysql2"
 gem 'haml'
@@ -15,3 +15,6 @@ gem 'thin'
 group :development do
   gem 'capistrano'
 end
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'turbolinks'
+gem 'jbuilder', '~> 2.0'
