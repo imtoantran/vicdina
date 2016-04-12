@@ -1140,7 +1140,7 @@
                   %li
                     %a{:href => "mailto:info@vicdina.com"}
                       %i.fa.fa-envelope-o.pr-10>
-                      info@vicdina.com
+                      #{Shoppe.settings.email_address}
     / .footer end
     / .subfooter start
     / ================
@@ -1150,9 +1150,9 @@
           .row
             .col-md-12
               %p.text-center
-                Copyright @ 2015 The Project by
+                Copyright @ 2016 The Project by
                 = succeed "." do
-                  %a{:href => "http://vicdina.com", :target => "_blank"} Vicdina
+                  %a{:href => "http://lolemspa.com", :target => "_blank"} #{Shoppe.settings.store_name}
                 All Rights Reserved
     / .subfooter end
     / footer end
