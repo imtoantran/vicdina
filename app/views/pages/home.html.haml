@@ -1,6 +1,81 @@
 - active_nav_item :home
 - @full_header = true
 - @page_title = 'Welcome'
+- content_for :under_banner do
+  / section start
+  / ================
+  %section.light-gray-bg.pv-30.clearfix
+    .container
+      .row
+        .col-md-8.col-md-offset-2
+          %h2.text-center
+            Dịch vụ của
+            %strong Lọ Lem Spa
+          .separator
+          %p.large.text-center Ai bảo gái Phan Thiết không trắng???
+          %p Với công nghệ hấp trắng Hàn Quốc độc quyền tại Lọ Lem Spa mang đến cho các bạn gái Phan Thiết làn da trắng nổi bật, trắng rạng rỡ ko trắng ko lấy tiền .Cam kết trắng hoàn hảo 100%. Làn da trắng không còn là trở ngại khó khăn nữa đâu nhé. Công nghệ độc quyền, máy móc hiện đại mang đến cho các bạn vẻ ngoài thay đổi vượt trội.
+        .col-md-4.col-sm-6
+          .ph-20.feature-box.text-center.object-non-visible{"data-animation-effect" => "fadeInDownSmall", "data-effect-delay" => "100"}
+            %span.icon.large.circle
+              %img.img-circle{:alt => "beauty", :src => image_url("images/beauty-1.jpg")}/
+            %h3 Hấp trắng
+            .separator.clearfix
+            %p.text-muted Voluptatem ad provident non repudiandae beatae cupiditate amet reiciendis lorem ipsum dolor sit amet, consectetur.
+            %a{:href => "page-services.html"}
+              Read More
+              %i.pl-5.fa.fa-angle-double-right
+        .col-md-4.col-sm-6
+          .ph-20.feature-box.text-center.object-non-visible{"data-animation-effect" => "fadeInDownSmall", "data-effect-delay" => "200"}
+            %span.icon.large.circle
+              %img.img-circle{:alt => "beauty", :src => image_url("images/beauty-2.jpg")}/
+            %h3 Make Up
+            .separator.clearfix
+            %p.text-muted Iure sequi unde hic. Sapiente quaerat sequi inventore veritatis cumque lorem ipsum dolor sit amet, consectetur.
+            %a.link-dark{:href => "page-services.html"}
+              Read More
+              %i.pl-5.fa.fa-angle-double-right
+        .col-md-4.col-sm-6
+          .ph-20.feature-box.text-center.object-non-visible{"data-animation-effect" => "fadeInDownSmall", "data-effect-delay" => "300"}
+            %span.icon.large.circle
+              %img.img-circle{:alt => "beauty", :src => image_url("images/beauty-3.jpg")}/
+            %h3 Skin Care
+            .separator.clearfix
+            %p.text-muted Inventore dolores aut laboriosam cum consequuntur delectus sequi lorem ipsum dolor sit amet, consectetur.
+            %a{:href => "page-services.html"}
+              Read More
+              %i.pl-5.fa.fa-angle-double-right
+        .clearfix.visible-md
+        .col-md-4.col-sm-6
+          .ph-20.feature-box.text-center.object-non-visible{"data-animation-effect" => "fadeInDownSmall", "data-effect-delay" => "100"}
+            %span.icon.large.circle
+              %img.img-circle{:alt => "beauty", :src => image_url("images/beauty-3.jpg")}/
+            %h3 Spa
+            .separator.clearfix
+            %p.text-muted Voluptatem ad provident non repudiandae beatae cupiditate amet reiciendis lorem ipsum dolor sit amet, consectetur.
+            %a.link-dark{:href => "page-services.html"}
+              Read More
+              %i.pl-5.fa.fa-angle-double-right
+        .col-md-4.col-sm-6
+          .ph-20.feature-box.text-center.object-non-visible{"data-animation-effect" => "fadeInDownSmall", "data-effect-delay" => "200"}
+            %span.icon.large.circle
+              %img.img-circle{:alt => "beauty", :src => image_url("images/beauty-3.jpg")}/
+            %h3 Health Care
+            .separator.clearfix
+            %p.text-muted Iure sequi unde hic. Sapiente quaerat sequi inventore veritatis cumque lorem ipsum dolor sit amet, consectetur.
+            %a{:href => "page-services.html"}
+              Read More
+              %i.pl-5.fa.fa-angle-double-right
+        .col-md-4.col-sm-6
+          .ph-20.feature-box.text-center.object-non-visible{"data-animation-effect" => "fadeInDownSmall", "data-effect-delay" => "300"}
+            %span.icon.large.circle
+              %img.img-circle{:alt => "beauty", :src => image_url("images/beauty-3.jpg")}/
+            %h3 Massage
+            .separator.clearfix
+            %p.text-muted Inventore dolores aut laboriosam cum consequuntur delectus sequi lorem ipsum dolor sit amet, consectetur.
+            %a.link-dark{:href => "page-services.html"}
+              Read More
+              %i.pl-5.fa.fa-angle-double-right
+  / section end
 - content_for :banner do
   / banner start
   / ================
@@ -109,4 +184,4 @@
   / slideshow end
   / banner end
 
-= render 'shared/product_list', :products => @products
+/= render 'shared/product_list', :products => @products

@@ -3,5 +3,8 @@
   <component name="dataSourceStorageLocal">
     <data-source name="Rails shop: development" uuid="593740ca-bf67-4e52-b901-c825be8d79e4" />
     <data-source name="Rails shop: test" uuid="332f39dc-ba5c-4792-b969-db3bc8d1a629" />
+    <data-source name="SQLite -" uuid="f136dff0-85d0-44f0-8792-4bae9533bebc">
+      <secret-storage>master_key</secret-storage>
+    </data-source>
   </component>
 </project>

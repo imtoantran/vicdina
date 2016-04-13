@@ -244,7 +244,8 @@ vi:
     weight_allowance: Weight Allowance
 
     submit: Gửi
-
+    posts:
+      posts: Bài viết
     attachments:
       remove_notice: Attachment removed successfully
 
@@ -779,6 +780,8 @@ vi:
         email_address: info@vicdina.com
         store_name: Vicdina.
         tax_name: Tax
+
+
 
   layouts:
     shoppe:

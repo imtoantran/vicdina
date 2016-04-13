@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150519173350) do
+ActiveRecord::Schema.define(version: 20160413092848) do
 
   create_table "nifty_attachments", force: :cascade do |t|
     t.integer  "parent_id"
@@ -33,6 +33,16 @@ ActiveRecord::Schema.define(version: 20150519173350) do
     t.string  "name"
     t.string  "value"
   end
+
+  create_table "posts", force: :cascade do |t|
+    t.string   "title"
+    t.string   "full_content"
+    t.integer  "user_id"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+
+  add_index "posts", ["user_id", "created_at"], name: "index_posts_on_user_id_and_created_at"
 
   create_table "shoppe_addresses", force: :cascade do |t|
     t.integer  "customer_id"
